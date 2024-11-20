@@ -1,6 +1,6 @@
 //c program to make a server which 
 // detects icmp flood attack
-// by calculate the running rate
+// by calculating the running rate
 // using raw socket
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,6 +22,7 @@
 
 int request_count = 0;           // Count of requests received
 time_t start_timer      ;    // Start time for rate calculation
+double prev_rate = 0.0;
 
 int total_req = 0;
 
@@ -100,7 +101,7 @@ void *handle_icmp(void *arg) {
         }
 
         double avg_rate = 0.0;
-        double prev_rate = 0.0;
+        
         // Compute running average rate
 	time_t elapsed;
     time(&elapsed);
@@ -112,14 +113,21 @@ void *handle_icmp(void *arg) {
 	        log_event(buf);
             time(&start_timer);
             request_count = 0;
+		
         }
         double threshold = prev_rate * RATE_LIMIT_FACTOR;
+	if(threshold == 0) threshold = 200;
+	prev_rate = avg_rate;
+		if(prev_rate > STARTUP_LIMIT) {
+		    prev_rate = STARTUP_LIMIT;
+		}
         
 
         // Determine if we are in the grace period
         time_t current_time ;
          time(&current_time);
-         printf("%f",difftime(current_time, server_start_time));
+        // printf("%f",difftime(current_time, server_start_time));
+	
         if (difftime(current_time, server_start_time) < GRACE_PERIOD) {
             // Apply startup limit
             if (avg_rate > STARTUP_LIMIT) {
@@ -130,17 +138,14 @@ void *handle_icmp(void *arg) {
             }
         } else {
             // Apply running average threshold after grace period
-            if (avg_rate > threshold && total_req > STARTUP_LIMIT) {
-                printf("ICMP flood detected! Blocking traffic.[%f vs %f]\n",avg_rate, threshold);
+            if ((avg_rate > threshold )&& (avg_rate > STARTUP_LIMIT)) {
+                printf("ICMP flood detected! Blocking traffic.[%f]\n",avg_rate);
                 log_event("ICMP flood detected! Blocking traffic.");
                 initiate_block();
                 continue;
             }
         }
-        prev_rate = avg_rate;
-        if(prev_rate > STARTUP_LIMIT) {
-            prev_rate = STARTUP_LIMIT;
-        }
+        
         // Process ICMP packet (Example: Echo Reply)
         struct iphdr *ip_header = (struct iphdr *)buffer;
         struct icmphdr *icmp_header = (struct icmphdr *)(buffer + (ip_header->ihl * 4));

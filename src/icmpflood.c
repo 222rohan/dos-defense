@@ -13,7 +13,6 @@ char *dest_ip;
 static int PROTO_ICMP = 1;
 
 void *send_icmpflood(void *tmp){
-    sleep(2);
     int *fd = tmp;
 
     char *packet;
