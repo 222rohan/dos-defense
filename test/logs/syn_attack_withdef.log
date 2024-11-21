@@ -1,0 +1,22 @@
+[Thu Nov 21 02:03:18 2024] Server started.
+[Thu Nov 21 02:03:18 2024] Server started.
+[Thu Nov 21 02:03:22 2024] Running average SYN rate: 0.25 SYN packets/sec
+
+[Thu Nov 21 02:04:11 2024] Running average SYN rate: 0.04 SYN packets/sec
+
+
+[Thu Nov 21 02:04:12 2024] Running average SYN rate: 5.89 SYN packets/sec
+
+[Thu Nov 21 02:04:13 2024] Running average SYN rate: 44.20 SYN packets/sec
+
+[Thu Nov 21 02:04:14 2024] Running average SYN rate: 2.00 SYN packets/sec
+
+[Thu Nov 21 02:04:14 2024] Running average SYN rate: 28327.00 SYN packets/sec
+
+[Thu Nov 21 02:04:14 2024] SYN flood detected! Blocking traffic.
+[Thu Nov 21 02:04:24 2024] Resumed SYN processing after block period.
+[Thu Nov 21 02:04:24 2024] Running average SYN rate: 0.10 SYN packets/sec
+
+[Thu Nov 21 02:04:25 2024] Running average SYN rate: 43917.00 SYN packets/sec
+
+[Thu Nov 21 02:04:25 2024] SYN flood detected! Blocking traffic.

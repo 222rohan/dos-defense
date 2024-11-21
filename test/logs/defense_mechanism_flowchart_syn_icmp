@@ -1,0 +1,22 @@
+// Defense Mechanism for SYN and ICMP Flood Attacks
+digraph {
+	A [label=Start]
+	B [label="Check for ICMP Rate"]
+	C [label="ICMP Rate > Threshold?"]
+	D [label="Trigger Defense (Block ICMP Client)"]
+	E [label="Check for SYN Requests from Same Client"]
+	F [label="Same Client SYN Request > 1?"]
+	G [label="Trigger Defense (Block SYN Client)"]
+	H [label="No Attack Detected"]
+	I [label=End]
+	A -> B
+	B -> C
+	C -> D [label="Yes, ICMP Rate High"]
+	C -> E [label="No, ICMP Rate Normal"]
+	E -> F
+	F -> G [label="Yes, SYN Requests from Same Client"]
+	F -> H [label="No, SYN Requests Normal"]
+	D -> I
+	G -> I
+	H -> I
+}

@@ -1,0 +1,122 @@
+[Thu Nov 21 01:41:57 2024] Server started.
+[Thu Nov 21 01:41:57 2024] Server started.
+[Thu Nov 21 01:42:32 2024] Running average rate: 1.00 requests/sec
+
+[Thu Nov 21 01:42:33 2024] Running average rate: 4.00 requests/sec
+
+[Thu Nov 21 01:42:34 2024] Running average rate: 4.00 requests/sec
+
+[Thu Nov 21 01:42:35 2024] Running average rate: 4.00 requests/sec
+
+[Thu Nov 21 01:42:36 2024] Running average rate: 20.00 requests/sec
+
+[Thu Nov 21 01:42:37 2024] Running average rate: 16.00 requests/sec
+
+[Thu Nov 21 01:42:38 2024] Running average rate: 12.00 requests/sec
+
+[Thu Nov 21 01:42:39 2024] Running average rate: 8.00 requests/sec
+
+[Thu Nov 21 01:42:40 2024] Running average rate: 16.00 requests/sec
+
+[Thu Nov 21 01:42:41 2024] Running average rate: 4.00 requests/sec
+
+[Thu Nov 21 01:42:42 2024] Running average rate: 12.00 requests/sec
+
+[Thu Nov 21 01:42:43 2024] Running average rate: 16.00 requests/sec
+
+[Thu Nov 21 01:42:44 2024] Running average rate: 12.00 requests/sec
+
+[Thu Nov 21 01:42:45 2024] Running average rate: 8.00 requests/sec
+
+[Thu Nov 21 01:42:46 2024] Running average rate: 4.00 requests/sec
+
+[Thu Nov 21 01:42:47 2024] Running average rate: 16.00 requests/sec
+
+[Thu Nov 21 01:42:48 2024] Running average rate: 8.00 requests/sec
+
+[Thu Nov 21 01:43:27 2024] Running average rate: 8.00 requests/sec
+
+[Thu Nov 21 01:43:28 2024] Running average rate: 4.00 requests/sec
+
+[Thu Nov 21 01:43:29 2024] Running average rate: 4.00 requests/sec
+
+[Thu Nov 21 01:43:30 2024] Running average rate: 4.00 requests/sec
+
+[Thu Nov 21 01:43:31 2024] Running average rate: 12.00 requests/sec
+
+[Thu Nov 21 01:43:32 2024] Running average rate: 24.00 requests/sec
+
+[Thu Nov 21 01:43:33 2024] Running average rate: 4.00 requests/sec
+
+[Thu Nov 21 01:43:40 2024] Running average rate: 8.00 requests/sec
+
+[Thu Nov 21 01:43:41 2024] Running average rate: 28573.00 requests/sec
+
+[Thu Nov 21 01:43:41 2024] ICMP flood detected! Blocking traffic.
+[Thu Nov 21 01:43:41 2024] Suspected ICMP flood detected! Blocking ICMP traffic for 10 seconds.
+
+[Thu Nov 21 01:43:51 2024] Resumed ICMP processing after block period.
+[Thu Nov 21 01:43:51 2024] Running average rate: 1.00 requests/sec
+
+[Thu Nov 21 01:49:03 2024] Running average rate: 278.00 requests/sec
+
+[Thu Nov 21 01:49:03 2024] ICMP flood detected! Blocking traffic.
+[Thu Nov 21 01:49:03 2024] Suspected ICMP flood detected! Blocking ICMP traffic for 10 seconds.
+
+[Thu Nov 21 01:49:13 2024] Resumed ICMP processing after block period.
+[Thu Nov 21 01:49:13 2024] Running average rate: 1.00 requests/sec
+
+[Thu Nov 21 01:50:13 2024] Running average rate: 279.00 requests/sec
+
+[Thu Nov 21 01:50:13 2024] ICMP flood detected! Blocking traffic.
+[Thu Nov 21 01:50:13 2024] Suspected ICMP flood detected! Blocking ICMP traffic for 10 seconds.
+
+[Thu Nov 21 01:50:23 2024] Resumed ICMP processing after block period.
+[Thu Nov 21 01:50:23 2024] Running average rate: 953.00 requests/sec
+
+[Thu Nov 21 01:50:23 2024] ICMP flood detected! Blocking traffic.
+[Thu Nov 21 01:50:23 2024] Suspected ICMP flood detected! Blocking ICMP traffic for 10 seconds.
+
+[Thu Nov 21 01:50:33 2024] Resumed ICMP processing after block period.
+[Thu Nov 21 01:50:33 2024] Running average rate: 120.00 requests/sec
+
+[Thu Nov 21 01:50:34 2024] Running average rate: 23174.00 requests/sec
+
+[Thu Nov 21 01:50:34 2024] ICMP flood detected! Blocking traffic.
+[Thu Nov 21 01:50:34 2024] Suspected ICMP flood detected! Blocking ICMP traffic for 10 seconds.
+
+[Thu Nov 21 01:50:44 2024] Resumed ICMP processing after block period.
+[Thu Nov 21 01:50:44 2024] Running average rate: 2.00 requests/sec
+
+[Thu Nov 21 01:50:45 2024] Running average rate: 16800.00 requests/sec
+
+[Thu Nov 21 01:50:45 2024] ICMP flood detected! Blocking traffic.
+[Thu Nov 21 01:50:45 2024] Suspected ICMP flood detected! Blocking ICMP traffic for 10 seconds.
+
+[Thu Nov 21 01:50:55 2024] Resumed ICMP processing after block period.
+[Thu Nov 21 01:50:55 2024] Running average rate: 1.00 requests/sec
+
+[Thu Nov 21 01:50:56 2024] Running average rate: 23675.00 requests/sec
+
+[Thu Nov 21 01:50:56 2024] ICMP flood detected! Blocking traffic.
+[Thu Nov 21 01:50:56 2024] Suspected ICMP flood detected! Blocking ICMP traffic for 10 seconds.
+
+[Thu Nov 21 01:51:06 2024] Resumed ICMP processing after block period.
+[Thu Nov 21 01:51:06 2024] Running average rate: 1.00 requests/sec
+
+[Thu Nov 21 01:51:07 2024] Running average rate: 23130.00 requests/sec
+
+[Thu Nov 21 01:51:07 2024] ICMP flood detected! Blocking traffic.
+[Thu Nov 21 01:51:07 2024] Suspected ICMP flood detected! Blocking ICMP traffic for 10 seconds.
+
+[Thu Nov 21 01:51:17 2024] Resumed ICMP processing after block period.
+[Thu Nov 21 01:51:17 2024] Running average rate: 1.00 requests/sec
+
+[Thu Nov 21 01:51:18 2024] Running average rate: 21582.00 requests/sec
+
+[Thu Nov 21 01:51:18 2024] ICMP flood detected! Blocking traffic.
+[Thu Nov 21 01:51:18 2024] Suspected ICMP flood detected! Blocking ICMP traffic for 10 seconds.
+
+[Thu Nov 21 01:51:28 2024] Resumed ICMP processing after block period.
+[Thu Nov 21 01:51:28 2024] Running average rate: 1.00 requests/sec
+
